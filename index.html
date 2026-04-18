@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,74 +7,20 @@
 <title>Amman Construction</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0a0a;
-  color: white;
-}
-
-header {
-  background: #111;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(black, #222);
-}
-
-.hero h1 {
-  font-size: 40px;
-}
-
-.hero p {
-  font-size: 18px;
-}
-
-button {
-  background: yellow;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.card {
-  background: #111;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-input, textarea {
-  width: 80%;
-  padding: 10px;
-}
-
-footer {
-  background: #111;
-  padding: 20px;
-  text-align: center;
-}
+body {margin:0;font-family:Arial;background:#0a0a0a;color:white;scroll-behavior:smooth}
+header {background:#111;padding:15px;position:sticky;top:0;text-align:center}
+nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold}
+.hero {text-align:center;padding:120px 20px;background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat}
+.hero h1 {font-size:42px}
+.section {padding:50px 20px;text-align:center}
+.card {background:#111;padding:20px;margin:10px;border-radius:10px;transition:0.3s}
+.card:hover {transform:scale(1.05);box-shadow:0 0 15px yellow}
+.gallery img {width:100%;max-width:300px;margin:10px;border-radius:10px;transition:0.3s}
+.gallery img:hover {transform:scale(1.05)}
+button {background:yellow;border:none;padding:10px 20px;cursor:pointer;font-weight:bold}
+footer {background:#111;padding:20px;text-align:center}
+.whatsapp {position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:20px;text-decoration:none}
 </style>
-
 </head>
 
 <body>
@@ -81,8 +28,8 @@ footer {
 <header>
 <nav>
 <a href="#">Home</a>
-<a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -93,11 +40,6 @@ footer {
 <button onclick="callNow()">Call Now</button>
 </div>
 
-<div id="about" class="section">
-<h2>About Us</h2>
-<p>We are a trusted construction company in Tamil Nadu providing high quality residential and commercial construction services with timely delivery and customer satisfaction.</p>
-</div>
-
 <div id="services" class="section">
 <h2>Services</h2>
 <div class="card">Residential Construction</div>
@@ -106,16 +48,20 @@ footer {
 <div class="card">Interior & Exterior Works</div>
 </div>
 
-<div class="section">
-<h2>Testimonials</h2>
-<div class="card">"Trustworthy person, completed my house on time with good quality work"</div>
-<div class="card">"Good quality, good value and quick response"</div>
+<div id="gallery" class="section gallery">
+<h2>Our Projects</h2>
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
 </div>
 
 <div id="contact" class="section">
 <h2>Contact</h2>
 <p>Phone: 09092370001</p>
 <p>Address: Velanthavalam Rd, Ottakkalmandapam, Tamil Nadu</p>
+
+<h3>Location</h3>
+<iframe src="https://maps.google.com/maps?q=Ottakkalmandapam&t=&z=13&ie=UTF8&iwloc=&output=embed" width="90%" height="300" style="border:0;"></iframe>
 
 <form>
 <input placeholder="Name" required><br><br>
@@ -129,8 +75,10 @@ footer {
 <p>© 2026 Amman Construction</p>
 </footer>
 
+<a class="whatsapp" href="https://wa.me/919092370001" target="_blank">💬</a>
+
 <script>
-function callNow() {
+function callNow(){
   window.location.href = "tel:09092370001";
 }
 </script>
