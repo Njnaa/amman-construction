@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amman Construction</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
+
+header {
+  background: #111;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(black, #222);
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+button {
+  background: yellow;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Amman Construction</h1>
+<p>Building Trust with Quality & Commitment</p>
+<button onclick="callNow()">Call Now</button>
+</div>
+
+<div id="about" class="section">
+<h2>About Us</h2>
+<p>We are a trusted construction company in Tamil Nadu providing high quality residential and commercial construction services with timely delivery and customer satisfaction.</p>
+</div>
+
+<div id="services" class="section">
+<h2>Services</h2>
+<div class="card">Residential Construction</div>
+<div class="card">Commercial Construction</div>
+<div class="card">Renovation & Remodeling</div>
+<div class="card">Interior & Exterior Works</div>
+</div>
+
+<div class="section">
+<h2>Testimonials</h2>
+<div class="card">"Trustworthy person, completed my house on time with good quality work"</div>
+<div class="card">"Good quality, good value and quick response"</div>
+</div>
+
+<div id="contact" class="section">
+<h2>Contact</h2>
+<p>Phone: 09092370001</p>
+<p>Address: Velanthavalam Rd, Ottakkalmandapam, Tamil Nadu</p>
+
+<form>
+<input placeholder="Name" required><br><br>
+<input placeholder="Phone" required><br><br>
+<textarea placeholder="Message"></textarea><br><br>
+<button type="submit">Send</button>
+</form>
+</div>
+
+<footer>
+<p>© 2026 Amman Construction</p>
+</footer>
+
+<script>
+function callNow() {
+  window.location.href = "tel:09092370001";
+}
+</script>
+
+</body>
+</html>
